@@ -12,6 +12,7 @@ run: build ## Build and run
 	./bin/$(BINARY)
 
 test: ## Run tests
+	go test ./...
 	go vet ./...
 
 lint: ## Run go vet
